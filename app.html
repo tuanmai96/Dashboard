@@ -5,50 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <container>
+    <div class="container">
 
-        <header>
-            <top>
-                search bar / notification / profile picture / profile name
-            </top>
+        <div class="header">
+            <div class="top-header">
+                <div class="search">
+                    <button class="search-btn">
+                        <i class="material-icons">search</i>
+                    </button>
+                    <input type="text">
+                </div>
+                <div>
+                    <button class="notif-btn">
+                        <i class="material-icons">notifications</i>
+                    </button>
+                </div>
+                <div class="profile-btn">
+                    <input type="button" name="button" onclick="showUser()"/>
+                </div>
+            </div>
             <bottom>
                 larger profile picture / "hi there + profile name (@profile handle)" / new upload share
             </bottom>
-        </header>
+        </div>
 
-        <sidebar>
-            <logo>
+        <div class="sidebar">
+            <div class="logo">
+                <i class="material-icons">dashboard</i>
+                Dashboard
+            </div>
+            <div class="menu">
+                <ul class="top-menu">
+                    <li><i class="material-icons">home</i>Home</li>
+                    <li><i class="material-icons">person</i>Profile</li>
+                    <li><i class="material-icons">mail</i>Messages</li>
+                    <li><i class="material-icons">history</i>History</li>
+                    <li><i class="material-icons">task</i>Tasks</li>
+                    <li><i class="material-icons">group</i>Communities</li>
+                </ul>
+                <ul class="bot-menu">
+                    <li><i class="material-icons">settings</i>Settings</li>
+                    <li><i class="material-icons">help</i>Support</li>
+                    <li><i class="material-icons">lock</i>Privacy</li>
+                </ul>
+            </div>
+        </div>
 
-            </logo>
-            <side-tabs>
+        <div class="main">
+            <h1>Your projects</h1>
+            <card><title></title></card>
+            <card><title></title></card>
+            <card><title></title></card>
+            <card><title></title></card>
+            <card><title></title></card>
+            <card><title></title></card>
 
-            </side-tabs>
-        </sidebar>
+            <announcements>
+                <head-title>Announcements</head-title>
+                <content>
+    
+                </content>
+            </announcements>
+    
+            <trending>
+                <head-title>Trending</head-title>
+                <users>
+    
+                </users>
+            </trending>
+        </div>
 
-        <project>
-            <card></card>
-            <card></card>
-            <card></card>
-            <card></card>
-            <card></card>
-            <card></card>
-        </project>
 
-        <announcements>
-            <content>
 
-            </content>
-        </announcements>
-
-        <trending>
-            <users>
-                
-            </users>
-        </trending>
-
-    </container>
+    </div>
 </body>
 </html>
