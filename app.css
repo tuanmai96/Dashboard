@@ -21,12 +21,13 @@
     background-color: white;
     display: grid;
     grid-column: 2 / 3;
+    height: ;
 }
 
 .top-header {
     display: flex;
     flex-wrap: nowrap;
-    
+    justify-content: space-between;
 }
 
 .search {
@@ -43,7 +44,7 @@
 
 .search-bar {
     height: 30px;
-    width: 700px;
+    width: 80em;
     border-radius: 99px;
     border: none;
     background-color: #bccbde;;
@@ -64,7 +65,7 @@ a:visited {
     display: flex;
     align-items: center;
     margin-top: -2em;
-    margin-left: 30em;
+    margin-right: 3em;
     column-gap: 3em;
 }
 
@@ -81,6 +82,43 @@ a:visited {
     border: none;
     background-image:url('https://i.kym-cdn.com/photos/images/original/001/372/044/285.jpg');
     background-size:cover;
+ }
+
+ .bot-header {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .left-bot-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+ }
+
+.greeting {
+    font-weight: 500;
+ }
+
+ .user-greeting {
+    font-size: 1.5em;
+ }
+
+ .right-bot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+    margin-right: 2em;
+ }
+
+ .right-bot-header > button {
+    border: none;
+    border-radius: 99px;
+    height: 3em;
+    width: 9em;
+    background-color: lightskyblue;
  }
  
 .sidebar {
@@ -125,12 +163,60 @@ li i {
 .main {
     background-color: #bccbde;
     display: grid;
-    grid-row: 2 / 4
+    grid-template-columns: 3fr 1fr;
 }
 
 .project-section-title {
     font-weight: 500;
     font-size: 20px;
+}
+
+.project {
+    display: grid;
+    grid-template-rows: 30px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    color: grey;
+  }
+
+.project .card {
+    height: 130px;
+    width: 500px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.card .title {
+    color: black;
+    font-weight: 500;
+}
+
+.card-button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.a-card {
+    background-color: white;
+    height: 250px;
+    border-radius: 10px;
+    display: ;
+}
+
+.t-card {
+    background-color: white;
+    height: 250px;
+    border-radius: 10px;
 }
 
 
